@@ -14,8 +14,11 @@ C\+\+的使用範圍很廣
 從各種低階系統到商業軟體  
 還有數學計算都可以用C\+\+  
 在所有程式之中佔有非常重要的地位  
+
 ## 環境建置
+
 [VScode for C++](https://hackmd.io/@liaojason2/vscodecppwindows)
+
 ## 宣告
 ### 資料型態
 
