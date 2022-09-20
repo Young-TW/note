@@ -1,14 +1,14 @@
 ---
-tags: 筆記
+tags: Note
 ---
 
-# C# 筆記
+# C# Note
 
 [TOC]
 
 ### 參考資料
 
-- [【C#】3小時初學者教學](https://youtu.be/T9BeejD3i0g)
+- [【C#】3 Hours beginner tutorial](https://youtu.be/T9BeejD3i0g)
 
 ## 開發環境
 
@@ -26,7 +26,7 @@ Csharp
 └─Program.cs
 ```
 
-## 基本輸出輸入
+## Basic input & output
 
 ### Hello world
 
@@ -68,7 +68,7 @@ namespace Csharp
 
 ```
 
-## 資料型態
+## Data type
 
 
 
@@ -100,11 +100,11 @@ namespace Csharp
 
 ### if
 
-### 迴圈
+### Loop
 
-### for
+### For
 
-### while
+### While
 
 ## class & object
 

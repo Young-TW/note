@@ -1,12 +1,12 @@
 ---
-tags: 筆記
+tags: Note
 ---
 
-# Bash 筆記
+# Bash Note
 
 [TOC]
 
-## 參考資料
+## source data
 
 - https://superuser.com/questions/522714/in-zsh-how-can-i-run-a-script-which-is-written-for-bash
 - https://www.cyberciti.biz/faq/bash-for-loop/

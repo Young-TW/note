@@ -28,9 +28,11 @@ double是比較長的浮點數
 bool(布林值)是或否 也就是1或0  
 char(字元)可以存一個字  
 
-### 範例
+### Example
+
 ```cpp=
 int a;
 ```
-### 解說
-第一行宣告變數`a`  
+
+### Explain
+First line declare interger varble `a`  

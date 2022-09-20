@@ -6,39 +6,56 @@ tags: Note
 
 [TOC]
 
-## 輸入
-#### 範例
+## Input
+#### Example
+
 ```cpp=
 int a;
 cin >> a;
 ```
-#### 解說
-先宣告變數`a`  
-第二行要求使用者輸入一個值給變數`a`  
-## 輸出
-無輸出  
-#### 範例
+
+#### Explain
+
+First line declare varible `a`  
+Second line give a value to `a`  
+
+## Output
+
+#### Example
+
 ```cpp=
 int a=1;
 cout << "a=" << a;
 ```
-#### 結果
+
+#### Result
+
 ```
 a=1
 ```
-#### 解說
-第一行將1放入變數`a`  
-第二行輸出`a=`變數`a`的值  
-## 完整程式
-#### 範例
+
+#### Explain
+
+First line give `a` a value `1`  
+Second line output `a=` varible value of `a`   
+
+## All code
+
+#### Example
+
 ```cpp=
 #include <iostream>
 using namespace std;
 int main(){
+    int a;
+    cin >> a;
+    cout << a;
     return 0;
 }
 ```
-#### 解說
+
+#### Explain
+
 初學 C\+\+ 時  
 大部分的人會先給你這個格式  
 以利後續快速教學  

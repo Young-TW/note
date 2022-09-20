@@ -37,9 +37,11 @@ for(;;){
 
 ### Usage
 
-當條件成立時
+When condition = True
+Run the code inside {}
+
 ```cpp
-while(/*條件*/){
+while(/*condition*/){
 
 }
 ```

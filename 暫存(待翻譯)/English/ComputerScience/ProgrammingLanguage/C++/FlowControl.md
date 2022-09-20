@@ -6,39 +6,44 @@ tags: Note
 
 [TOC]
 
-## 判斷式
-### if
-#### 基本語法
+## If
+#### Syntax
+
 ```cpp=
-if (條件){
-    動作;
+if (/*condition*/){
+    /*action*/;
 }
 ```
-#### 範例
+
+#### Example
+
 ```cpp=
 int a=1;
 if (a==1){
     cout << "a=1";
 }
 ```
-#### 結果
+
+#### Result
+
 ```
 a=1
 ```
+
 #### 結論
 若條件成立則執行動作  
 條件不成利則不執行  
 ### else
-#### 基本語法
+#### Syntax
 ```cpp=
-if (條件){
-    動作
+if (/*condition*/){
+    /*action*/;
 }
 else{
-    動作
+    /*action*/;
 }
 ```
-#### 範例
+#### Example
 ```cpp=
 int a=1
 if (a!=1){
@@ -48,15 +53,21 @@ else{
     cout << "a=1";
 }
 ```
-#### 結果
+#### Result
+
 ```
 a=1
 ```
-#### 結論
+
+#### Conclusion
+
 若if條件未成立  
 則執行else內的動作  
+
 ### else if
-#### 基本語法
+
+#### Syntax
+
 ```cpp=
 if (條件){
     動作
@@ -65,7 +76,9 @@ else if (條件){
     動作
 }
 ```
-#### 範例
+
+#### Example
+
 ```cpp=
 int a=1
 if (a!=1){
@@ -75,17 +88,25 @@ else if (a<3){
     cout << "a<3";
 }
 ```
-#### 結果
+
+#### Result
+
 ```
 a<3
 ```
-#### 結論
+
+#### Conclusion
+
 若第一次的條件不成立  
 則執行else if的判斷  
-## switch case
+
+## Switch case
+
 switch case 的概念  
 可以用多個 else if 來想像  
-#### 基本語法
+
+#### Syntax
+
 ```cpp=
 switch (輸入值){
     case 選項:
@@ -96,7 +117,9 @@ switch (輸入值){
         動作;
 }
 ```
-#### 範例
+
+#### Example
+
 ```cpp=
 let a=1;
 switch (a){
@@ -111,12 +134,16 @@ switch (a){
         break;
 }
 ```
-#### 結果
+
+#### Result
+
 ```
 a=2
 ```
-#### 結論
-當`輸入值`等於`選項`時  
+
+#### Conclusion
+
+When `input value` = `選項`  
 執行該`選項`內的`動作`  
 需要注意的是  
 case 內的動作結束後要加上 break;  

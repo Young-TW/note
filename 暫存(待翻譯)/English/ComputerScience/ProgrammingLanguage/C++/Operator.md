@@ -6,30 +6,30 @@ tags: Note
 
 [TOC]
 
-### 邏輯運算子
+### Logic Operator
 
 - ==  
-判斷是否相等
+Judge two varible is the same
 
 - !=  
-判斷是否不相等
+Judge two varible is not the same
 
-### 數學運算子
+### Math Operator
 
 - \+  
-相加
+Add
 
 - \-  
-相減
+Minus
 
 - \*  
-相乘
+Multiplication
 
 - /  
-相除
+Division
 
 - %  
-取餘數
+Take the remainder
 
 - =  
-將等號右側的值放進等號左側
+Put the right side value to left side
