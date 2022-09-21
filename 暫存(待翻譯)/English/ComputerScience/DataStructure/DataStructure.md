@@ -1,8 +1,8 @@
 ---
-tags: 筆記
+tags: Note
 ---
 
-# 資料結構 筆記
+# Data Structure
 
 [TOC]
 
