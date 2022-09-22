@@ -1,25 +1,25 @@
 ---
-tags: 筆記
+tags: Note
 ---
 
-# 換行規則
+# Change Line Rule
 
 ## LF CRLF
 
 ### CR
 
-Carriage Return 表示回車  
+`Carriage Return` means `enter`  
 
 ### LF
 
-Line Feed 表示換行  
+`Line Feed` means go to next line  
 
 ### CRLF
 
-Carriage Return & Line Feed  
+`Carriage Return` & `Line Feed`  
 
-### 不同作業系統的差異
+### Difference on different operating system
 
-Dos和Windows採用回車 換行（CR LF）表示下一行  
-而UNIX/Linux採用換行符（LF）表示下一行  
-蘋果機(MAC OS系統)則採用回車符（CR）表示下一行  
+`Dos` and `Windows` use `CR`+`LF` means next line  
+But `UNIX`/`Linux` use `LF` means next line  
+Apple computer (`MAC OS`) use `CR` means next line  

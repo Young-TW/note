@@ -1,10 +1,10 @@
 ---
-tags: 筆記, 演算法
+tags: Note, Algorithm
 ---
 
 # Dynamic Programming
 
-## 範例：費氏數列
+## Example：費氏數列
 
 費氏數列是一個需要重複多次運算的數列  
 但我們可以儲存已經算好的值來節省重複計算的時間  

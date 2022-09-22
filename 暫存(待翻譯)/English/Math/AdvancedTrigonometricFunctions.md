@@ -1,9 +1,9 @@
 ---
 tags: Math
-description: 三角函數進階
+description: Trigonometric Functions Advanced
 ---
 
-# 數學 三角函數進階
+# Trigonometric Functions Advanced
 
 [TOC]
 

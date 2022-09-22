@@ -1,9 +1,9 @@
 ---
 tags: Math
-description: 三角函數基礎
+description: Trigonometric Functions Basic
 ---
 
-# 數學 三角函數基礎
+# Trigonometric Functions Basic
 
 [TOC]
 

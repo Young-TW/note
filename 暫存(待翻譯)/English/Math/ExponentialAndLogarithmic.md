@@ -39,12 +39,12 @@ description: 指數和對數的性質和公式
 
 2<sup>3</sup> \* 2<sup>2</sup> = 2\*2\*2\*2\*2 = 2<sup>5</sup>  
 
-### 指數函數圖形
+### Exponential Function Graph
 
 ![](https://i.imgur.com/aOKl7ar.png)
 
 
-## 對數
+## Logarithm
 
 對數的概念是由指數延伸  
 對數有底數和真數  

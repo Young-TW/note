@@ -1,11 +1,14 @@
 ---
 tags: Math
-description: 數列與級數
+description: Sequences And Series
 ---
 
-# 數學 數列與級數
+# Sequences And Series
+
 [TOC]
-### 數列與級數的定義
+
+### Definition Of Sequences And Series
+
 1.數字排成一列稱為數列，舉例：1,3,5,7,9 ，
 而將逗號換成「+」，就變成了級數 舉例：1+3+5+7+9
 
@@ -23,6 +26,7 @@ description: 數列與級數
 
 
 ### 等差數列
+
 1.若數列<an>滿足每一後項減去前項的差都相同，則稱<an>為等差數列，而每一後項減去前項的差稱為公差，以d表示
 
 2.若首項為a1，公差為d，則a2-a1 = a3-a2 = a4-a3 = an-an-1 = d
@@ -33,10 +37,12 @@ description: 數列與級數
 4.若a,b,c三數形成等差數列，則稱b為a,c的等差中項，而b = (a+c)/2
 
 ### 等差級數
+
 1.a1+a2+a3+...+an = n(a1+an)/2    
 口訣：項數(首項+末項)/2
 
 ### 等比數列
+
 1.若數列<an>滿足每一後項除以前項的商都相同，則稱<an>為等比數列，而每一後項除以前項的差稱為公比，以r表示
 
 2.若首項為a1，公比為r，則a2/a1 = a3/a2 = a4/a3 = an/an-1 = r
@@ -47,6 +53,7 @@ description: 數列與級數
 4.若a,b,c三數形成等比數列，則稱b為a,c的等比中項，而b = ±√ac
 
 ### 等比級數
+
 1.若等比數列<an>首項為a1，公比為r，則
 ![](https://i.imgur.com/Ab6GFsP.png)
 

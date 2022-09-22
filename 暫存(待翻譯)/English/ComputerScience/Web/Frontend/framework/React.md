@@ -1,14 +1,14 @@
 ---
-tags: 筆記
+tags: Note
 ---
 
-# React 筆記
+# React Note
 
 [TOC]
 
-## jsx檔案
+## jsx file
 
-直接看範例
+Example  
 
 ```jsx=
 import logo from './logo.svg';
@@ -38,15 +38,16 @@ function App() {
 export default App;
 
 ```
-### jsx 標籤語法
 
-上面的 jsx 檔案內  
-函式 App 中的 return 值就是 HTML 的寫法  
+### jsx tag synatx
+
+In the example jsx file  
+The `return` in the Function `App` value is HTML syntax  
 
 ### import
 
 在 jsx 檔案最上面通常會 import 其他檔案  
-例如 CSS 或其他 jsx 檔案  
+例如 CSS or another jsx file  
 
 ### function
 

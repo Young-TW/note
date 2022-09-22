@@ -1,8 +1,8 @@
 ---
-tags: 筆記
+tags: Note
 ---
 
-# 網頁前端 筆記
+# Web Frontend Note
 
 [TOC]
 
@@ -26,7 +26,7 @@ tags: 筆記
 以層狀標籤配合縮排來框住裡面的內容  
 
 ### Head
-#### 簡介
+#### Introduction
 head通常拿來放一歇頁面看不到的內容  
 像是連結到哪個CSS檔案  
 還有字元編碼  
