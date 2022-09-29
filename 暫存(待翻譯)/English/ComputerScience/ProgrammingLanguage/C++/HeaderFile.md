@@ -1,31 +1,29 @@
 ---
-tags: 筆記
+tags: Note
 ---
 
-# C++ 標頭檔(header file)
+# C++ Header File
 
 [TOC]
 
-## 簡介
-
-標頭檔
+## Introduction
 
 ## include
 
-### include 概念
+### Concept of include
 
-### include 方法
+### Usage
 
-在 `C++` 的主程式中可以使用以下方法來引入標頭檔。  
+Use this method to include header files in `C++`。  
 
 ```cpp
 #include <>
 #include ""
 ```
 
-## 撰寫標頭檔
+## Write header file
 
-### 範例
+### Example
 
 ```h
 #ifndef ADD_H
@@ -38,37 +36,37 @@ int add(int, int);
 
  <!-- 參考 https://zh.wikipedia.org/zh-tw/%E5%A4%B4%E6%96%87%E4%BB%B6 -->
 
-## 標頭檔內容
+## Content of Header File
 
-### 物件(Class)
+### Class
 
-請見[物件.md](物件.md)
+See [Class.md](Class.md) for more detail.
 
-### 名稱空間(Namespace)
+### Namespace
 
-請見[名稱空間.md](名稱空間.md)
+See [Namespace.md](Namespace.md) for more detail.
 
-### 函式(Function)
+### Function
 
-請見[函式.md](函式.md)
+See [Function.md](Function.md) for more detail.
 
-## 萬用標頭檔
+## bits/stdc++.h
 
-### 簡介
+### Introduction
 
-在演算法競賽選手或使用 `C++` 解題的人有些會用
-`#include <bits/stdc++.h>`，
-這行的作用相等於把所有 `C++` 內建的標頭檔全部引入，
-對於演算法競賽選手來說非常方便，
-但是對於平常開發專案來說比較不會這樣使用。  
+Some people use `C++` to solve problem on Online-Judge often use this line.
+`#include <bits/stdc++.h>`  
+This line can include all `C++` header files in one line.  
+It's very convenient to them.
+But normal developer usually not use this for develop.  
 
-### 使用方法
+### Usage
 
 要注意的是編譯器有沒有支援這個寫法，
 像是 `Windows` 預設的 `C++` 編譯器就不支援，
 不過大部分 `Online Judge` 或是試場的編譯器都會支援。
 
-#### 範例
+#### Example
 
 ```cpp
 #include <bits/stdc++.h>
@@ -81,13 +79,13 @@ int add(int, int);
 貼上下面的萬用標頭檔內容進 `stdc++.h`，
 再使用以下方法：  
 
-#### 範例
+#### Example
 
 ```cpp
 #include "bits/stdc++.h"
 ```
 
-### 萬用標頭檔內容
+### content of bits/stdc++.h
 
 ```h
 // C++ includes used for precompiling -*- C++ -*-

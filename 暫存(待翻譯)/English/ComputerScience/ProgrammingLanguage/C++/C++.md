@@ -2,7 +2,7 @@
 tags: Note
 ---
 
-# C++ Note
+# C++
 
 [TOC]
 
@@ -10,19 +10,33 @@ tags: Note
 
 ### [Introduction](Introduction.md)
 
-### [Development environment](Init.md)
+### [Development Environment](Init.md)
+
+### [Cmake](Cmake.md)
 
 ### [Datatype](Datatype.md)
 
-### [Datastructure](Datastructure.md)
- 
 ### [Input Output](InputOutput.md)
+
+### [Datastructure](Datastructure.md)
 
 ### [Operator](Operator.md)
 
-### [FlowControl](FlowControl.md)
+### [Flow Control](FlowControl.md)
 
 ### [Loop](Loop.md)
+
+### [Function](Function.md)
+
+## Advanced
+
+### [Header File](HeaderFile.md)
+
+### [Namespace](Namespace.md)
+
+## Object-Oriented
+
+### [Class](Class.md)
 
 ## STL
 
