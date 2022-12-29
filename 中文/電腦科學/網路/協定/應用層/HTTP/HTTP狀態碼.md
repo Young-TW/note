@@ -2,7 +2,7 @@
 tags: 筆記
 ---
 
-# Http status code - Http 狀態碼
+# HTTP 狀態碼 (HTTP status code)
 
 ### 參考資料
 

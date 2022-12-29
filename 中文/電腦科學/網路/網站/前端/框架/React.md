@@ -6,7 +6,7 @@ tags: 筆記
 
 [TOC]
 
-## jsx檔案
+## jsx 檔案
 
 直接看範例
 
@@ -38,6 +38,7 @@ function App() {
 export default App;
 
 ```
+
 ### jsx 標籤語法
 
 上面的 jsx 檔案內  
