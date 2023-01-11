@@ -2,11 +2,14 @@
 tags: 筆記
 ---
 
-# C++ This保留字 (This keyword)
+# C++ This 保留字 (This keyword)
 
 [TOC]
 
 ## 簡介
+
+This 關鍵字常在運算子多載中使用到，
+功能為指向物件本身。  
 
 ## 語法
 
