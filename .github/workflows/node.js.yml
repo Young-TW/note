@@ -34,7 +34,7 @@ jobs:
         git config --global user.email young20050727@gmail.com
         git config --global user.name Young-TW
         git status
-        git remote add origin https://${{secrets.COMMIT_SECRET}}@github.com/Young-TW/Young-TW.github.io.git
+        git remote add origin https://${{secrets.COMMIT_SECRET}}@github.com/Young-TW/note.git
         git checkout -b gh-pages-1
         git add --all
         git commit -m "update"
