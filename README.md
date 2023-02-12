@@ -10,8 +10,6 @@ For different user read.
 
 ## Young 的筆記
 
-- [中文筆記入口](/docs/中文/參閱.md)
-
 這份筆記中大部分由 Young 本人撰寫，
 如果內容有誤歡迎發 issue 或 pr，
 同時這份筆記預計會寫成兩種語言，
