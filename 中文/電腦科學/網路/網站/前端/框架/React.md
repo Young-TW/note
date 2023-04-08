@@ -41,13 +41,13 @@ export default App;
 
 ### jsx 標籤語法
 
-上面的 jsx 檔案內  
-函式 App 中的 return 值就是 HTML 的寫法  
+上面的 jsx 檔案內
+函式 App 中的 return 值就是 HTML 的寫法
 
 ### import
 
-在 jsx 檔案最上面通常會 import 其他檔案  
-例如 CSS 或其他 jsx 檔案  
+在 jsx 檔案最上面通常會 import 其他檔案
+例如 CSS 或其他 jsx 檔案
 
 ### function
 

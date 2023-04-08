@@ -5,7 +5,7 @@ tags: 使用說明
 # cmus
 
 cmus 是一個由c寫成的音樂播放器，
-在終端機內運行。  
+在終端機內運行。
 
 - [參考資料](https://linux.die.net/man/7/cmus-tutorial)
 -[ ](https://www.itread01.com/p/180131.html)

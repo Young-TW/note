@@ -100,7 +100,7 @@ infix fun sh1(a: Int, b: Int): Int {
     return a + b
 }
 fun main(){
-    1 sh1 2 + 3 //1 + (2 + 3) 
+    1 sh1 2 + 3 //1 + (2 + 3)
 }
 ```
 
@@ -124,7 +124,7 @@ fun main(args: Array<String>) {
 #### Null檢查
 
 ```kotlin=
-var age: String? = "23" 
+var age: String? = "23"
 val ages = age!!.toInt()
 //不做處理返回 null
 val ages1 = age?.toInt()
