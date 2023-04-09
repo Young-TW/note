@@ -17,23 +17,23 @@ This 關鍵字常在運算子多載中使用到，
 ## 語法
 
 ```cpp
-class Stack{
+class Stack {
     public:
         vector<int> v_stack;
 
-    operator+(Stack &obj){
+    operator+(Stack &obj) {
         Stack res;
-        for(int i=0; i<this->size; i++){
+        for (int i=0; i<this->size; i++) {
             res.add(this->stack.at(i));
         }
-        for(int i=0; i<obj.size; i++){
+        for (int i=0; i<obj.size; i++) {
             res.add(obj.stack.at(i));
         }
         return res;
     }
 }
 
-main(){
+int main() {
     Stack a;
     Stack b;
     a = a+b;

@@ -16,7 +16,7 @@ Friend 保留字允許一個 class 直接存取另一個 class 中 private 內�
 ## 語法
 
 ```cpp
-class human{
+class human {
     private:
         int age;
     public:
@@ -24,7 +24,7 @@ class human{
         friend class cat;
 };
 
-class cat{
+class cat {
     private:
         int weight;
         int age;
