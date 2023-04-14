@@ -1,0 +1,158 @@
+{
+  "main": {
+    "id": "a04fbbf70d6643bd",
+    "type": "split",
+    "children": [
+      {
+        "id": "8876d31cfedf591c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7c7dc7b62bda9b7d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "中文/電腦科學/程式語言/C++/檔案/檔案系統.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "c36d6483d7986fd7",
+    "type": "split",
+    "children": [
+      {
+        "id": "808d4ec5c14b828c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "58ab8b94e484d934",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "e078862add5b0616",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "d28d31f01e3e8483",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "ac0ba962890bb44d",
+    "type": "split",
+    "children": [
+      {
+        "id": "ee873f1c6fb2acff",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3e4efbe4d9135f48",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "中文/電腦科學/程式語言/C++/檔案/檔案系統.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "79dffb5cdacc2852",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "中文/電腦科學/程式語言/C++/檔案/檔案系統.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "995e024342374e84",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "bbf436f9a9a53dab",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "中文/電腦科學/程式語言/C++/檔案/檔案系統.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:開啟快速切換": false,
+      "graph:查看關聯圖": false,
+      "canvas:建立新畫布": false,
+      "daily-notes:開啟今天的每日筆記": false,
+      "templates:插入模板": false,
+      "command-palette:開啟命令面板": false
+    }
+  },
+  "active": "7c7dc7b62bda9b7d",
+  "lastOpenFiles": [
+    "中文/參閱.md",
+    "English/README.md",
+    "中文/電腦科學/程式語言/C++/物件導向/This保留字.md",
+    "中文/電腦科學/編譯器/LLVM/LLVM.md",
+    "中文/電腦科學/程式語言/Python/Python.md",
+    "中文/電腦科學/程式語言/C++/C++.md"
+  ]
+}
