@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "中文/電腦科學/程式語言/C++/物件導向/類別.md",
+                "file": "中文/電腦科學/網路/協定/網路層/IP位址.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "中文/電腦科學/程式語言/C++/物件導向/類別.md",
+                "file": "中文/電腦科學/網路/協定/網路層/IP位址.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "中文/電腦科學/程式語言/C++/物件導向/類別.md",
+                "file": "中文/電腦科學/網路/協定/網路層/IP位址.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "中文/電腦科學/程式語言/C++/物件導向/類別.md"
+                "file": "中文/電腦科學/網路/協定/網路層/IP位址.md"
               }
             }
           }
@@ -148,6 +148,12 @@
   },
   "active": "7c7dc7b62bda9b7d",
   "lastOpenFiles": [
+    "中文/電腦科學/網路/協定/網路層/區域網路.md",
+    "中文/電腦科學/網路/協定/網路層/廣域網路.md",
+    "中文/電腦科學/網路/OSI網路模型.md",
+    "中文/電腦科學/程式語言/C++/C++.md",
+    "暫存(待翻譯)/English/ComputerScience/ProgrammingLanguage/C++/C++.md",
+    "中文/電腦科學/程式語言/C++/物件導向/類別.md",
     "中文/電腦科學/程式語言/C++/模板/模板.md",
     "中文/電腦科學/程式語言/C++/檔案/檔案系統.md",
     "中文/電腦科學/演算法/大O.md",
@@ -155,7 +161,6 @@
     "English/README.md",
     "中文/電腦科學/程式語言/C++/物件導向/This保留字.md",
     "中文/電腦科學/編譯器/LLVM/LLVM.md",
-    "中文/電腦科學/程式語言/Python/Python.md",
-    "中文/電腦科學/程式語言/C++/C++.md"
+    "中文/電腦科學/程式語言/Python/Python.md"
   ]
 }
