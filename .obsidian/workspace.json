@@ -18,8 +18,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "4b099c64b2a06e0e",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.2.8"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -62,6 +73,14 @@
             "type": "leaf",
             "state": {
               "type": "starred",
+              "state": {}
+            }
+          },
+          {
+            "id": "aacf6050c419955f",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
               "state": {}
             }
           }
@@ -146,7 +165,7 @@
       "command-palette:開啟命令面板": false
     }
   },
-  "active": "7c7dc7b62bda9b7d",
+  "active": "4b099c64b2a06e0e",
   "lastOpenFiles": [
     "中文/電腦科學/程式語言/C++/C++.md",
     "中文/電腦科學/程式語言/C++/基礎/前置作業.md",
