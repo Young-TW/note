@@ -80,4 +80,4 @@ tags: 筆記
 
 ## 其他
 
-### [自動化編譯 (CMake)](自動化編譯.md)
+### [自動化編譯 (CMake)](../CMake/CMake.md)
