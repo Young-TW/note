@@ -4,14 +4,14 @@
     "type": "split",
     "children": [
       {
-        "id": "8876d31cfedf591c",
+        "id": "1d06f5fd8d2f6395",
         "type": "tabs",
         "children": [
           {
-            "id": "7c7dc7b62bda9b7d",
+            "id": "23ec0fe03e857dc8",
             "type": "leaf",
             "state": {
-              "type": "graph",
+              "type": "empty",
               "state": {}
             }
           }
@@ -89,6 +89,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "中文/電腦科學/程式語言/C++/物件導向/封裝.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,6 +106,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "中文/電腦科學/程式語言/C++/物件導向/封裝.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +128,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "中文/電腦科學/程式語言/C++/物件導向/封裝.md"
+              }
             }
           }
         ]
@@ -146,7 +150,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7c7dc7b62bda9b7d",
+  "active": "58ab8b94e484d934",
   "lastOpenFiles": [
     "中文/電腦科學/程式語言/C++/C++.md",
     "未命名.canvas",
