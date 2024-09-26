@@ -1,40 +1,54 @@
-/dockmentclass{article}
-/usepackage{amsmath}
-/usepackage{amsthm}
-/usepackage{amssymb}
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
 
-/title{微分}
-/author{Young}
-/date{}
+\title{微分}
+\author{Young}
+\date{}
 
-/begin{document}
+\begin{document}
 
-/maketitle
+\maketitle
 
 導數的基本公式：
 
-x^n / (x-a) = (x^(n-1) + ax^(n-2) + a^2x^(n-3) + ... + a^(n-1)) / (x-a)
+\[
+\frac{x^n - a^n}{x-a} = x^{n-1} + ax^{n-2} + a^2x^{n-3} + \cdots + a^{n-1}
+\]
 
-我們可以使用導函數來求導數，並且多項式的導函數次方項與係數可以被拆開，每個單項無係數（已被拆開）導函數的計算方式如下：
+我們可以使用導函數來求導數，並且多項式的導函數次方項與係數可以被拆開。每個單項無係數（已被拆開）導函數的計算方式如下：
 
-如果 f(x) = x^n， 則 f'(x) = nx^(n-1)
+如果 $f(x) = x^n$， 則 $f'(x) = nx^{n-1}$
 
-所以 f(x) = x^3 + 2x^2 + 3x + 4 的導函數為 f'(x) = 3x^2 + 4x + 3
+所以 $f(x) = x^3 + 2x^2 + 3x + 4$ 的導函數為
 
-微分乘法律：
+\[
+f'(x) = 3x^2 + 4x + 3
+\]
 
-如果 f(x) = u(x)v(x)， 則 f'(x) = u'(x)v(x) + u(x)v'(x)
+微分乘法則：
+
+如果 $f(x) = u(x)v(x)$， 則 $f'(x) = u'(x)v(x) + u(x)v'(x)$
 
 範例：
 
-如果 f(x) = (x+1)(x-1)， 則 f'(x) = (x-1)(x+1)' + (x+1)(x-1)' = (x-1) + (x+1) = 2x
+如果 $f(x) = (x+1)(x-1)$， 則
+
+\[
+f'(x) = (x-1)(x+1)' + (x+1)(x-1)' = (x-1) + (x+1) = 2x
+\]
 
 微分連鎖律：
 
-如果 f(x) = u(g(x))， 則 f'(x) = u'(g(x))g'(x)
+如果 $f(x) = u(g(x))$， 則 $f'(x) = u'(g(x))g'(x)$
 
 範例：
 
-如果 f(x) = (x+1)^2， 則 f'(x) = 2(x+1)(x+1)' = 2(x+1)
+如果 $f(x) = (x+1)^2$， 則
 
-/end{document}
+\[
+f'(x) = 2(x+1)(x+1)' = 2(x+1)
+\]
+
+\end{document}
