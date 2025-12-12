@@ -60,7 +60,14 @@ echo 'export PATH=$PATH:/opt/rocm/bin' >> ~/.bashrc
 source ~/.bashrc
 ```
 
-到這邊應該就安裝完成，可以使用 rocm-smi 測試 ROCm 安裝是否成功
+到這邊應該就安裝完成，先重開機確保硬體正確載入。
+
+```shell
+sudo reboot now
+```
+
+
+使用 rocm-smi 測試 ROCm 安裝是否成功
 
 ```shell
 rocm-smi
