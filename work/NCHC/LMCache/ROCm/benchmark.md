@@ -51,5 +51,4 @@ Avg latency: 1.475279240796808 seconds
 75% percentile latency: 1.4755478004954057 seconds
 90% percentile latency: 1.4805126614111943 seconds
 99% percentile latency: 1.5062954947334948 seconds
-[rank0]:[W1214 15:27:13.615491204 ProcessGroupNCCL.cpp:1476] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
 ```
