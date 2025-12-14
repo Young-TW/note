@@ -181,7 +181,7 @@ curl http://localhost:8000/v1/chat/completions \
 
 使用 `watch -n 2 bash req.sh` 持續發送請求並觀察 LMCache 日誌輸出：
 
-最後一比請求的日誌顯示 LMCache 有命中快取：
+最後一筆請求的日誌顯示 LMCache 有命中快取：
 
 ```txt
 INFO 12-14 16:18:24 [async_llm.py:270] Added request chatcmpl-917d97645fb9403c8a73e31bb9135e42.
