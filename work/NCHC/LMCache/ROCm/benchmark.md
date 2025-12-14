@@ -87,7 +87,7 @@ vllm serve Qwen/Qwen3-8B \
     --kv-transfer-config '{"kv_connector":"LMCacheConnectorV1", "kv_role":"kv_both"}'
 ```
 
-#### 結果
+#### 測試過程
 
 ```txt
 INFO:     Started server process [5196]
@@ -95,7 +95,7 @@ INFO:     Waiting for application startup.
 INFO:     Application startup complete.
 ```
 
-請求
+##### 請求 vLLM 伺服器
 
 ```sh
 curl http://localhost:8000/v1/chat/completions \
@@ -111,7 +111,7 @@ curl http://localhost:8000/v1/chat/completions \
   }'
 ```
 
-回應
+##### vLLM 回應
 
 ```json
 {
@@ -142,4 +142,50 @@ curl http://localhost:8000/v1/chat/completions \
   "prompt_logprobs": null,
   "kv_transfer_params": null
 }
+```
+
+##### 多次請求並觀察 LMCache 作用
+
+設計一個長篇提示詞來測試 LMCache 的效果：
+
+```sh
+#!/bin/bash
+
+LONG_PROMPT="在 Shell Wrapper 的情境下,\`stdin\` 之所以「幾乎總是」被視為 Blocking IO(或表現得像 Blocking),主要有三個層面的原因d:
+###1. 作業系統的預設行為 (The Default)在 Linux/Unix 中,所有的 File Descriptor(包含 \`stdin\`)預設都是 Blocking 的。
+ 行為d:  當你呼叫 \`read(stdin, buffer, size)\` 時,如果使用者沒有輸入任何東西,程式就會停在那一行(Hang/Sleep),直到有資料進來為止。
+ 為什麼這樣設計？ 這是最節省 CPU 的方式。如果沒有輸入,作業系統就把你的程式掛起(Suspend),讓 CPU 去做別的事。
+ Wrapper 的困境d:  如果您寫一個 Wrapper,既要監聽使用者的鍵盤輸入,又要監聽後端程式(如 Shell)的輸出,單純的 Blocking \`read\` 就會出事 —— 因為你卡在等鍵盤時,後端程式可能有輸出要印,結果因為你卡住而印不出來(Deadlock 或延遲)。
+###2. TTY 的「行緩衝」模式 (Canonical Mode)這點最常被忽略。Shell Wrapper 通常是跑在 Terminal (TTY) 裡的。Terminal 預設處於 Canonical Mode(標準模式)。
+ 現象d:  即使你寫了程式去讀 \`stdin\`,使用者打字時,資料不會立刻傳給你的程式。資料會先被 TTY 的 Line Discipline(行規程)攔截並暫存。
+ 直到按下 Enterd:  只有當使用者按下 \`Enter\` 鍵,OS 才會把整行資料「推」給你的 \`stdin\`。
+ 這就是一種 Blockingd:  在使用者按 Enter 之前,對你的程式來說,\`stdin\` 就是空的、讀不到東西的。這是一種物理層級的 Blocking。
+ 註: 要做到像自動補全(Auto-suggestion)那樣逐字讀取,必須把 TTY 設為 Raw Mode,這又增加了實作複雜度。
+"
+
+python3 -c "import json, sys;
+print(json.dumps({
+    'model': 'Qwen/Qwen3-8B',
+    'messages': [
+        {'role': 'system', 'content': '你是一個摘要助手。'},
+        {'role': 'user', 'content': sys.argv[1]}
+    ],
+    'max_tokens': 10,
+    'temperature': 0.1
+}))" "$LONG_PROMPT" > payload.json
+
+curl http://localhost:8000/v1/chat/completions \
+  -H "Content-Type: application/json" \
+  -d @payload.json
+```
+
+使用 `watch -n 2 bash req.sh` 持續發送請求並觀察 LMCache 日誌輸出：
+
+最後一比請求的日誌顯示 LMCache 有命中快取：
+
+```txt
+INFO 12-14 16:18:24 [async_llm.py:270] Added request chatcmpl-917d97645fb9403c8a73e31bb9135e42.
+[2025-12-14 16:18:24,320] LMCache INFO: Reqid: chatcmpl-917d97645fb9403c8a73e31bb9135e42, Total tokens 497, LMCache hit tokens: 256, need to load: -240 (vllm_v1_adapter.py:1544:lmcache.integration.vllm.vllm_v1_adapter)
+INFO:     127.0.0.1:36640 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO 12-14 16:18:29 [loggers.py:118] Engine 000: Avg prompt throughput: 149.1 tokens/s, Avg generation throughput: 3.0 tokens/s, Running: 0 reqs, Waiting: 0 reqs, GPU KV cache usage: 0.0%, Prefix cache hit rate: 92.6%
 ```
