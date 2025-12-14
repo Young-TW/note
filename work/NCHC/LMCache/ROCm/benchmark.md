@@ -94,3 +94,52 @@ INFO:     Started server process [5196]
 INFO:     Waiting for application startup.
 INFO:     Application startup complete.
 ```
+
+請求
+
+```sh
+curl http://localhost:8000/v1/chat/completions \
+  -H "Content-Type: application/json" \
+  -d '{
+    "model": "Qwen/Qwen3-8B",
+    "messages": [
+      {"role": "system", "content": "你是一個樂於助人的助手。"},
+      {"role": "user", "content": "請用一句話解釋什麼是 KV Cache？"}
+    ],
+    "max_tokens": 100,
+    "temperature": 0.7
+  }'
+```
+
+回應
+
+```json
+{
+  "id": "chatcmpl-0ab9cd7c72b04bb49c4a731440f236e7",
+  "object": "chat.completion",
+  "created": 1765727855,
+  "model": "Qwen/Qwen3-8B",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "reasoning_content": null,
+        "content": "<think>\n好的，用户让我用一句话解释什么是KV Cache。首先，我需要确认自己对KV Cache的理解是否正确。KV Cache，也就是键值缓存，通常在处理序列数据时使用，比如在Transformer模型中。在解码过程中，模型需要记住之前处理过的输入，以便在生成后续输出时能够正确地进行上下文关联。KV Cache的作用就是存储这些键和值，这样在每次生成新的token时，模型不需要重新计算之前的键",
+        "tool_calls": []
+      },
+      "logprobs": null,
+      "finish_reason": "length",
+      "stop_reason": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 31,
+    "total_tokens": 131,
+    "completion_tokens": 100,
+    "prompt_tokens_details": null
+  },
+  "prompt_logprobs": null,
+  "kv_transfer_params": null
+}
+```
