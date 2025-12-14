@@ -86,3 +86,11 @@ vllm serve Qwen/Qwen3-8B \
     --tensor-parallel-size 1 \
     --kv-transfer-config '{"kv_connector":"LMCacheConnectorV1", "kv_role":"kv_both"}'
 ```
+
+#### 結果
+
+```txt
+INFO:     Started server process [5196]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+```
