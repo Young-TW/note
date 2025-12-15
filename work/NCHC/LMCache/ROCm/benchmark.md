@@ -4,7 +4,7 @@
 
 ```txt
 CPU: AMD EPYC 9654 *2
-GPU: AMD MI325X *8 # 因為還沒重新斷電冷啟動所以 GPU 載入只有四張
+GPU: AMD MI325X *8
 RAM: 2.3TB
 ```
 
