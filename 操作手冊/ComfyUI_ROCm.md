@@ -64,3 +64,26 @@ export PYTORCH_HIP_ALLOC_CONF=garbage_collection_threshold:0.8,max_split_size_mb
 ```bash
 python main.py --listen 0.0.0.0 --port 8188
 ```
+
+### 依照掛載的目錄設定 ComfyUI 的模型路徑
+
+```bash
+# 1. 確保在正確目錄
+cd /root/ComfyUI
+
+# 2. 用 echo 直接寫入正確的設定 (包含 Z-Image 修正)
+echo 'comfyui:
+    base_path: /app/storage
+    is_default: false
+    checkpoints: models/checkpoints
+    clip: models/clip
+    clip_vision: models/clip_vision
+    configs: models/configs
+    controlnet: models/controlnet
+    embeddings: models/embeddings
+    loras: models/loras
+    upscale_models: models/upscale_models
+    vae: models/vae
+    unet: models/unet
+    diffusion_models: models/unet' > extra_model_paths.yaml
+```
