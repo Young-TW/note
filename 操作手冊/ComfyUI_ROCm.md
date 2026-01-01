@@ -6,6 +6,7 @@
 podman run -it --name rocm7 \
   --device /dev/kfd \
   --device /dev/dri \
+  --ipc=host \
   --security-opt=label=disable \
   docker.io/rocm/dev-ubuntu-24.04:latest \
   /bin/bash
