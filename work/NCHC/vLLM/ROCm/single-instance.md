@@ -59,7 +59,6 @@ services:
       - "8000:8000"
 
     # === 啟動指令 ===
-    # 注意：這裡的 --model 路徑必須對應到上面的 volumes container 路徑 (/app/model)
     command: >
       python3 -m vllm.entrypoints.openai.api_server
       --model /app/model
@@ -85,7 +84,7 @@ MAX_TOKENS = 512            # Max output tokens
 
 測試結果如圖：
 
-![result](./result.png)
+![result](./benchmark/img/result-llama3.1-70b.png)
 
 左上角為首 Token 延遲，絕大部分請求都穩定在 0.3s 以內，整體呈長尾分布，p99 達到 2.52s。
 
