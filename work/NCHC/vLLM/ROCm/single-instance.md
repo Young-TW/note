@@ -1,6 +1,6 @@
-# Singel vLLM Instance Benchmark
+# Singel vLLM Instance
 
-因為 vLLM 單節點的模型推論透過 Prefix Cache 已經可以在 GPU 之間透過 P2P 傳輸 KV Cache（全部 GPU 一起做 Prefill/Decode）, 所以先不使用 LMCache 來做硬體上的 PD 分離。
+因為 vLLM 單節點的模型推論透過 Prefix Cache 已經可以在 GPU 之間透過 P2P 傳輸 KV Cache，目前的做法是 Tensor Parallel，也就是全部 GPU 一起做 Prefill/Decode，所以先不使用 LMCache 來做硬體上的 PD 分離。
 
 這邊的 benchmark 主要是測試單一實例下，vLLM Prefix Cache 對於多次請求的加速效果。
 
