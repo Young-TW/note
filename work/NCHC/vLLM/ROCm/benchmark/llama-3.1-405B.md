@@ -18,4 +18,4 @@ MAX_TOKENS = 512# Max output tokens
 
 測試結果如圖：
 
-![result](./img/result-llama3.1-405b.png)
+![result](./img/result-Llama-3.1-405B.png)

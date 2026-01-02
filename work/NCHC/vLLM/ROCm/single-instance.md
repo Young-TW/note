@@ -84,7 +84,7 @@ MAX_TOKENS = 512            # Max output tokens
 
 測試結果如圖：
 
-![result](./benchmark/img/result-llama3.1-70b.png)
+![result](./benchmark/img/result-Llama-3.1-70B.png)
 
 左上角為首 Token 延遲，絕大部分請求都穩定在 0.3s 以內，整體呈長尾分布，p99 達到 2.52s。
 
